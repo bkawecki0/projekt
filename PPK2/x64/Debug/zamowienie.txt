@@ -1,0 +1,5 @@
+2; Sok jablkowy; Napoje;8
+3; Jajecznica na boczku; Sniadania;12
+
+===================
+Suma: 20 zl

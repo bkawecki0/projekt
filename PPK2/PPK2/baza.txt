@@ -1,0 +1,4 @@
+1; Woda; Napoje; 5,00; Woda mineralna w szklance
+2; Sok jablkowy; Napoje; 8,00; Sok jablkowy swiezy w szklance
+3; Jajecznica na boczku; Sniadania; 12; Jajecznica z 3 jajek na swiezym boczku
+4; Tosty; Sniadanie; 8; Dwa tosty z serem i szynka

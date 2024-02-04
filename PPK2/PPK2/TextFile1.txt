@@ -1,0 +1,57 @@
+        if (wybor == '1') {
+
+            system("cls");
+            Napoje(menu);
+            cout << endl;
+            int idPotrawa;
+            cout << "Podaj numer potrawy, ktora chcesz dodac do zamowienia: ";
+            cin >> idPotrawa;
+
+            for (const auto& potrawa : menu) {
+                if (potrawa.id_potrawy == idPotrawa) {
+                    zamowienie.push_back(potrawa);
+                    break;
+                }
+            }
+            }
+
+            else if (wybor == '2') {
+                system("cls");
+                Sniadania(menu);
+                cout << endl;
+                int idPotrawa;
+                cout << "Podaj numer potrawy, ktora chcesz dodac do zamowienia: ";
+                cin >> idPotrawa;
+
+                for (const auto& potrawa : menu) {
+                    if (potrawa.id_potrawy == idPotrawa) {
+                        zamowienie.push_back(potrawa);
+                        break;
+                    }
+                }
+
+                else if (wybor == '0') {
+                    system("cls");
+                    zamowienie.clear();
+                    cout << "Zamowienie zostalo wyczyszczone" << endl;
+                    cout << endl;
+                }
+                system("cls");
+
+                char kontynuuj;
+                cout << "Czy chcesz zamawiac dalej?" << endl;
+                cout << "K - zamawiaj dalej" << endl;
+                cout << "R - zloz zamowienie" << endl;
+                cin >> kontynuuj;
+
+                if (kontynuuj == 'r' || kontynuuj == 'R') {
+
+                    Paragon(zamowienie, "zamowienie.txt", suma);
+                    cout << "Zamowienie zostalo zlozone" << endl;
+                    return 0;
+                }
+            }
+        }
+    }
+}
+
